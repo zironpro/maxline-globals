@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 
@@ -18,6 +17,11 @@ import {
 	getInsights,
 } from "@/feature/insights/actions/query";
 import type { Insight } from "@/feature/insights/actions/types";
+import {
+	InsightFaq,
+	InsightFaqItem,
+} from "@/feature/insights/components/insight-faq";
+import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { organizationSchemaId } from "@/lib/schema/ids";
 import { formatInsightDate } from "@/lib/utils";
@@ -125,7 +129,7 @@ export default async function InsightsSlugPage({ params }: Props) {
 								<li>
 									<Link
 										className="transition hover:text-accent-tertiary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-										href={`/${locale}`}
+										href={"/"}
 									>
 										{navigationT("home")}
 									</Link>
@@ -134,13 +138,13 @@ export default async function InsightsSlugPage({ params }: Props) {
 								<li>
 									<Link
 										className="transition hover:text-accent-tertiary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-										href={`/${locale}/insights`}
+										href={"/insights"}
 									>
 										{navigationT("insights")}
 									</Link>
 								</li>
 								<li aria-hidden="true">/</li>
-								<li>Event</li>
+								<li>{insight.metadata.category}</li>
 								<li
 									aria-current="page"
 									className="hidden"
@@ -169,7 +173,7 @@ export default async function InsightsSlugPage({ params }: Props) {
 				</HeroHeader>
 				<figure
 					aria-describedby={gridDescriptionId}
-					className="container relative -mt-12 mb-20 aspect-video max-w-7xl overflow-hidden rounded-3xl"
+					className="container relative -mt-12 mb-20 aspect-16/10 max-w-7xl overflow-hidden rounded-3xl"
 				>
 					<Image
 						alt={`${insight.metadata.title} cover image`}
@@ -190,6 +194,8 @@ export default async function InsightsSlugPage({ params }: Props) {
 								<Image {...props} className="rounded-lg shadow-lg" />
 							),
 							Link,
+							InsightFaq,
+							InsightFaqItem,
 							Button: (props) => (
 								<Button asChild {...props}>
 									<Link

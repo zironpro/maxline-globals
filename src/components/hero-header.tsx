@@ -52,7 +52,7 @@ export function HeroHeader({
 			return title.map((segment, index) => (
 				<span
 					className={cn(segment.className)}
-					key={`${segment.text}-${index}`}
+					key={`${segment.text}-${Number(index)}`}
 				>
 					<StaggeredText
 						duration={0.7}
