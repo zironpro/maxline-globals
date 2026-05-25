@@ -53,9 +53,9 @@ export const HeroSection = () => {
 							</Button>
 							<Button
 								asChild
-								className="bg-transparent text-secondary"
+								className="bg-card text-foreground"
 								size="lg"
-								variant="outline"
+								variant="secondary"
 							>
 								<Link href="/calculator">{t("hero.calculatorCta")}</Link>
 							</Button>
