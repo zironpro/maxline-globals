@@ -44,12 +44,20 @@ export const HeroSection = () => {
 								),
 							})}
 						</p>
-						<div className="mt-4 flex items-center gap-4">
+						<div className="mt-4 flex flex-wrap items-center gap-4">
 							<Button asChild size="lg">
 								<Link href="/quote">
 									{t("hero.primaryCta")}{" "}
 									<IconArrowRightTag className="ms-4 size-5 rtl:rotate-180" />
 								</Link>
+							</Button>
+							<Button
+								asChild
+								className="bg-transparent text-secondary"
+								size="lg"
+								variant="outline"
+							>
+								<Link href="/calculator">{t("hero.calculatorCta")}</Link>
 							</Button>
 							<Button
 								asChild
