@@ -47,7 +47,7 @@ export const RouteHeader = () => {
 					delay={10}
 					duration={2000}
 					key={10}
-					text={["14 Days", "~7,000 km", "Sea Freight"]}
+					text={["25 Days", "~7,000 km", "Sea Freight"]}
 					y={-50}
 				>
 					<RotatingText />

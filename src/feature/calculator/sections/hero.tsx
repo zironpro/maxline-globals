@@ -55,7 +55,7 @@ export function HeroSection() {
 					<ul className="grid grid-cols-3 gap-6">
 						<li className="tracking-wider">
 							<p className="text-muted/80">
-								<span className="font-semibold text-3xl text-card">14</span>{" "}
+								<span className="font-semibold text-3xl text-card">25</span>{" "}
 								Days
 							</p>
 							<span className="text-muted/80 text-xs uppercase">
