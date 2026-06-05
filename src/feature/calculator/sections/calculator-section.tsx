@@ -79,7 +79,7 @@ export function CalculatorSection() {
 	const [totalCost, setTotalCost] = useState<number>(0);
 	const [volumeFromWeight, setVolumeFromWeight] = useState<number>(0);
 
-	const RATE_PER_CBM = 235;
+	const RATE_PER_CBM = 255;
 	const DOC_FEE = 150;
 
 	const volume = calculatorForm.watch("volume");
@@ -150,9 +150,9 @@ export function CalculatorSection() {
 	return (
 		<div id="calculator-section">
 			<LazyMotion features={loadFeatures} strict>
-				<div className="">
+				<div>
 					<MotionDiv
-						className="t h-fit rounded-xl bg-card/50 p-1 backdrop-blur-lg"
+						className="h-fit rounded-xl bg-card/50 p-1 backdrop-blur-lg"
 						initial={{ opacity: 0, x: 30 }}
 						transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
 						viewport={{ once: true, margin: "-100px" }}
