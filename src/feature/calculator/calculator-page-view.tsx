@@ -12,7 +12,7 @@ export const CalculatorPageView = () => {
 			{/* <CalculatorSection /> */}
 			<HowItWorksSection />
 			<WhyThisMattersSection />
-			<Services />
+			<Services title="End-to-End Logistics Services to your exact specifications." />
 			<BenefitsSection />
 			<Cta />
 		</main>
