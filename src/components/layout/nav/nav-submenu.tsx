@@ -13,6 +13,7 @@ interface SubmenuItem {
 	title: string;
 	href: string;
 	img: string;
+	alt: string;
 }
 
 interface NavSubmenuProps {
@@ -124,7 +125,7 @@ export const NavSubmenu = ({ isOpen, items, parentTitle }: NavSubmenuProps) => {
 									</div>
 									<div className="absolute inset-0 z-10 bg-accent-secondary/50 mix-blend-multiply" />
 									<Image
-										alt={`${sub.title} services at Maxline Global`}
+										alt={sub.alt}
 										className="object-cover transition-[filter] group-hover/submenu:brightness-110"
 										fill
 										loading="lazy"
