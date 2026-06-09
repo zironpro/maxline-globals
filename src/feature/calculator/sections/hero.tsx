@@ -32,22 +32,27 @@ export function HeroSection() {
 						{t("description")}
 					</p>
 
-					<div className="mt-6 flex items-center justify-center gap-3 sm:justify-start md:mt-9">
+					<div className="mt-6 flex items-start justify-center gap-3 sm:justify-start md:mt-9">
 						<Button asChild size="lg">
 							<Link href="/quote">
-								Get a Quote{" "}
+								Get instant estimate{" "}
 								<IconArrowRightTag className="ms-4 size-5 rtl:rotate-180" />
 							</Link>
 						</Button>
 
-						<Button
-							asChild
-							className="bg-transparent text-secondary"
-							size="lg"
-							variant="outline"
-						>
-							<Link href="/quote">View Services</Link>
-						</Button>
+						<div className="flex flex-col items-center gap-1">
+							<Button
+								asChild
+								className="bg-transparent text-secondary hover:bg-card hover:text-accent-secondary"
+								size="lg"
+								variant="outline"
+							>
+								<Link href="/contact">Talk to a logistics expert</Link>
+							</Button>
+							<span className="text-muted/80 text-xs">
+								Response in under 1 hour.
+							</span>
+						</div>
 					</div>
 
 					<Separator className="my-9 bg-secondary/20 md:my-12" />
@@ -83,7 +88,7 @@ export function HeroSection() {
 			</div>
 			<div className="absolute inset-0 z-10 bg-linear-to-b from-brand-dark md:bg-linear-to-r" />
 			<Image
-				alt=""
+				alt="Maxline Global freight cost calculator hero showing Guangzhou to Jebel Ali shipping route"
 				className="object-cover"
 				fill
 				loading="eager"
