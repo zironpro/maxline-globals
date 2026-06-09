@@ -49,7 +49,9 @@ export function BenefitsSection() {
 					viewport={{ once: true, margin: "-50px" }}
 					whileInView={{ opacity: 1, y: 0 }}
 				>
-					<h2 className="mb-4 text-3xl md:text-4xl">Why Use Our Calculator</h2>
+					<h2 className="mb-4 text-3xl md:text-4xl">
+						Why Choose Maxline’s Calculator
+					</h2>
 					<p className="mx-auto max-w-2xl text-gray-600">
 						Experience the difference with a tool built by logistics
 						professionals for logistics needs
