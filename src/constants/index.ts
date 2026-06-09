@@ -8,6 +8,7 @@ type SubMenuItem = {
 	title: string;
 	href: string;
 	img: string;
+	alt: string;
 };
 
 export type NavLink = {
@@ -16,49 +17,57 @@ export type NavLink = {
 	submenu?: SubMenuItem[];
 };
 
-const SERVICES_LINKS = [
+const SERVICES_LINKS: SubMenuItem[] = [
 	{
 		title: "airFreight",
 		href: "/services/air-freight",
 		img: "/images/air-freight.webp",
+		alt: "Air freight service for time‑critical cargo—Maxline Global",
 	},
 
 	{
 		title: "landFreight",
 		href: "/services/land-freight",
 		img: "/images/blogs/transport-logistics-products.jpg",
+		alt: "Land freight trucking service across the GCC by Maxline Global",
 	},
 	{
 		title: "seaFreight",
 		href: "/services/sea-freight",
 		img: "/images/sea-freight.webp",
+		alt: "Sea freight LCL and FCL shipping solutions—Maxline Global",
 	},
 	{
 		title: "projectCargo",
 		href: "/services/project-cargo",
 		img: "/images/transportation-types.jpg",
+		alt: "Project cargo handling with heavy lift and out‑of‑gauge expertise",
 	},
 	{
 		title: "packing",
 		href: "/services/packing",
 		img: "/images/packing.webp",
+		alt: "Export packing and crating to protect cargo in transit",
 	},
 	{
 		title: "warehousing",
 		href: "/services/warehousing",
 		img: "/images/warehousing.webp",
+		alt: "Warehousing and storage in Jebel Ali, Dubai—Maxline Global",
 	},
 	{
 		title: "exhibitionCargo",
 		href: "/services/exhibition-cargo",
 		img: "/images/exhibition-cargo.webp",
+		alt: "Exhibition and event logistics with on‑site handling and setup",
 	},
 	{
 		title: "MovingLashing",
 		href: "/services/movers-lashing",
 		img: "/images/movers-nav.webp",
+		alt: "Moving, securing, and lashing services for safe cargo transport",
 	},
-];
+] as const;
 
 export const NAVLINKS: NavLink[] = [
 	{
@@ -73,17 +82,25 @@ export const NAVLINKS: NavLink[] = [
 				title: "aboutUs",
 				href: "/company/about",
 				img: "/images/about-us.webp",
+				alt: "About Maxline Global — Your Trusted Logistics Partner",
 			},
 			{
 				title: "leadershipTeam",
 				href: "/company/team",
 				img: "/images/meeting-1.webp",
+				alt: "Meet the leadership team at Maxline Global",
 			},
-			{ title: "insights", href: "/insights", img: "/images/insights.webp" },
+			{
+				title: "insights",
+				href: "/insights",
+				img: "/images/insights.webp",
+				alt: "Industry insights and news from Maxline Global",
+			},
 			{
 				title: "careers",
 				href: "/company/careers",
 				img: "/images/insights.webp",
+				alt: "Careers at Maxline Global",
 			},
 		],
 	},
