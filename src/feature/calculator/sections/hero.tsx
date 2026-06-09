@@ -93,7 +93,7 @@ export function HeroSection() {
 				fill
 				loading="eager"
 				priority
-				src="/images/calculator-hero.webp"
+				src="/images/china-to-uae.webp"
 			/>
 		</section>
 	);
