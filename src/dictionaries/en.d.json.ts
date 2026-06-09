@@ -781,8 +781,8 @@ declare const messages: {
 	},
 	"CalculatorPage": {
 		"hero": {
-			"subtitle": "Instant Freight Estimates",
-			"title": "Fast & Reliable Freight: Guangzhou to Jabel Ali",
+			"subtitle": "Instant, accurate Freight Estimates",
+			"title": "Guangzhou to Jebel Ali Freight (LCL/FCL)",
 			"description": "Get instant, accurate shipping cost estimates for your cargo. Calculate your freight costs in seconds with our transparent pricing tool."
 		},
 		"form": {
@@ -800,7 +800,7 @@ declare const messages: {
 			}
 		},
 		"calculator": {
-			"title": "Calculate Your Freight",
+			"title": "Get Instant Shipping Rates",
 			"grossWeight": {
 				"label": "Gross Weight (kg)",
 				"placeholder": "e.g., 2000",
@@ -835,7 +835,7 @@ declare const messages: {
 			}
 		},
 		"howItWorks": {
-			"title": "How It Works",
+			"title": "How the Calculator Works",
 			"description": "Our transparent calculation process ensures you get accurate freight estimates every time",
 			"stepPrefix": "Step {step}",
 			"steps": [
