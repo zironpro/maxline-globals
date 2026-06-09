@@ -1,4 +1,4 @@
-import { memo } from "react";
+import React from "react";
 
 import Link from "next/link";
 
@@ -14,63 +14,76 @@ import { SERVICES } from "@/constants";
 
 import { ServicesGrid } from "../../services/services-grid";
 
-export const Services = memo(() => {
+interface ServicesProps {
+	title?: string;
+	description?: string;
+	btnText?: string;
+	services?: typeof SERVICES;
+}
+
+export const Services: React.FC<ServicesProps> = ({
+	title,
+	description,
+	btnText,
+	services = SERVICES,
+}) => {
 	const t = useTranslations("HomePage");
 	const navT = useTranslations("Navigation");
+
+	const titleText = title ?? t("services.title");
+	const descriptionText = description ?? t("services.description");
+	const buttonLabel = btnText ?? t("services.btnText");
+
 	return (
-		<>
-			<section
-				aria-labelledby="services-heading"
-				className="relative bg-secondary py-12 sm:py-16 md:py-20"
-				itemScope
-				itemType="https://schema.org/Service"
-			>
-				<div className="container relative z-30">
-					<span className="flex items-center gap-2 font-medium text-muted-foreground text-xs sm:text-sm">
-						<IconHeadphone className="size-3 sm:size-4" />
-						{navT("services")}
-					</span>
-					<div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:gap-8">
-						<h2
-							className="text-balance font-semibold text-2xl text-primary sm:pb-6 sm:text-3xl md:pb-10 md:text-4xl lg:pb-20 lg:text-5xl rtl:leading-snug"
-							id="services-heading"
-							itemProp="name"
-						>
-							<StaggeredText
-								className="[&>span:nth-last-child(-n+1)]:text-primary! [&>span:nth-last-child(-n+4)]:text-accent-secondary"
-								duration={0.5}
-								staggerChildren={0.02}
-								text={t("services.title")}
-							/>
-						</h2>
-						<div className="space-y-3 sm:space-y-4">
-							<p className="text-base text-muted-foreground sm:text-lg md:text-xl">
-								{t("services.description")}
-							</p>
-							<Button asChild className="w-full sm:w-auto" variant="secondary">
-								<Link href="/services">
-									{t("services.btnText")}{" "}
-									<IconArrowRightTag className="ms-2 size-4 sm:ms-4 rtl:rotate-180" />
-								</Link>
-							</Button>
-						</div>
-					</div>
-					<div
-						className="mt-8 md:mt-0"
-						itemProp="offers"
-						itemScope
-						itemType="https://schema.org/Offer"
+		<section
+			aria-labelledby="services-heading"
+			className="relative bg-secondary py-12 sm:py-16 md:py-20"
+			itemScope
+			itemType="https://schema.org/Service"
+		>
+			<div className="container relative z-30">
+				<span className="flex items-center gap-2 font-medium text-muted-foreground text-xs sm:text-sm">
+					<IconHeadphone className="size-3 sm:size-4" />
+					{navT("services")}
+				</span>
+				<div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:gap-8">
+					<h2
+						className="text-balance font-semibold text-2xl text-primary sm:pb-6 sm:text-3xl md:pb-10 md:text-4xl lg:pb-20 lg:text-5xl rtl:leading-snug"
+						id="services-heading"
+						itemProp="name"
 					>
-						<ServicesGrid services={SERVICES} />
+						<StaggeredText
+							className="[&>span:nth-last-child(-n+1)]:text-primary! [&>span:nth-last-child(-n+4)]:text-accent-secondary"
+							duration={0.5}
+							staggerChildren={0.02}
+							text={titleText}
+						/>
+					</h2>
+					<div className="space-y-3 sm:space-y-4">
+						<p className="text-base text-muted-foreground sm:text-lg md:text-xl">
+							{descriptionText}
+						</p>
+						<Button asChild className="w-full sm:w-auto" variant="secondary">
+							<Link href="/services">
+								{buttonLabel}
+								<IconArrowRightTag className="ms-2 size-4 sm:ms-4 rtl:rotate-180" />
+							</Link>
+						</Button>
 					</div>
 				</div>
+				<div
+					className="mt-8 md:mt-0"
+					itemProp="offers"
+					itemScope
+					itemType="https://schema.org/Offer"
+				>
+					<ServicesGrid services={services} />
+				</div>
+			</div>
 
-				<meta content="Logistics and Freight Services" itemProp="serviceType" />
-				<meta content="Worldwide" itemProp="areaServed" />
-				<meta content="Maxline Global" itemProp="provider" />
-			</section>
-		</>
+			<meta content="Logistics and Freight Services" itemProp="serviceType" />
+			<meta content="Worldwide" itemProp="areaServed" />
+			<meta content="Maxline Global" itemProp="provider" />
+		</section>
 	);
-});
-
-Services.displayName = "Services";
+};
