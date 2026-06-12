@@ -68,6 +68,11 @@ const nextConfig: NextConfig = {
 				permanent: true,
 			},
 			{
+				source: "/about",
+				destination: "/en/company/about",
+				permanent: true,
+			},
+			{
 				source: "/about-us",
 				destination: "/en/company/about",
 				permanent: true,
@@ -120,6 +125,36 @@ const nextConfig: NextConfig = {
 			{
 				source: "/logistics-truck",
 				destination: "/en/services/movers-lashing",
+				permanent: true,
+			},
+			{
+				source: "/ar/insights/logistics-trends-2024",
+				destination: "/en/insights",
+				permanent: true,
+			},
+			{
+				source: "/insights/logistics-trends-2024",
+				destination: "/en/insights",
+				permanent: true,
+			},
+			{
+				source: "/en/insights/maxline-",
+				destination: "/en/insights",
+				permanent: true,
+			},
+			{
+				source: "/en/insights/supply-chain-innovation",
+				destination: "/en/insights",
+				permanent: true,
+			},
+			{
+				source: "/insights/supply-chain-innovation",
+				destination: "/en/insights",
+				permanent: true,
+			},
+			{
+				source: "ar/insights/supply-chain-innovatio",
+				destination: "/en/insights",
 				permanent: true,
 			},
 		];
