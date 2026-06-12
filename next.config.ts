@@ -153,7 +153,7 @@ const nextConfig: NextConfig = {
 				permanent: true,
 			},
 			{
-				source: "ar/insights/supply-chain-innovatio",
+				source: "/ar/insights/supply-chain-innovatio",
 				destination: "/en/insights",
 				permanent: true,
 			},
