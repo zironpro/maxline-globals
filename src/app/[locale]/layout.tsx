@@ -127,6 +127,15 @@ export default async function RootLayout({
 				{/* <Script id="video-schema" type="application/ld+json">
 					{JSON.stringify(videoJsonLd)}
 				</Script> */}
+			</head>
+			<body
+				className={cn(
+					"antialiased rtl:font-ibm-plex",
+					inter.className,
+					metrify.variable,
+					ibmPlexSansArabic.variable
+				)}
+			>
 				<Script id="facebook-pixel" strategy="afterInteractive">
 					{`
 						!function(f,b,e,v,n,t,s)
@@ -150,15 +159,6 @@ export default async function RootLayout({
 						width="1"
 					/>
 				</noscript>
-			</head>
-			<body
-				className={cn(
-					"antialiased rtl:font-ibm-plex",
-					inter.className,
-					metrify.variable,
-					ibmPlexSansArabic.variable
-				)}
-			>
 				<NextIntlClientProvider locale={locale} messages={messages}>
 					<Providers>
 						{/* <AnnouncementBanner /> */}
