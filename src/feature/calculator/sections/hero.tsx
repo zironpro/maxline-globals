@@ -3,12 +3,7 @@ import Image from "next/image";
 import { Ship } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-
-import { IconArrowRightTag } from "@/assets/icons/arrow";
-
-import { Link } from "@/i18n/navigation";
 
 import { CalculatorSection } from "./calculator-section";
 
@@ -32,7 +27,7 @@ export function HeroSection() {
 						{t("description")}
 					</p>
 
-					<div className="mt-6 flex items-start justify-center gap-3 sm:justify-start md:mt-9">
+					{/* <div className="mt-6 flex items-start justify-center gap-3 sm:justify-start md:mt-9">
 						<Button asChild size="lg">
 							<Link href="/quote">
 								Get instant estimate{" "}
@@ -53,7 +48,7 @@ export function HeroSection() {
 								Response in under 1 hour.
 							</span>
 						</div>
-					</div>
+					</div> */}
 
 					<Separator className="my-9 bg-secondary/20 md:my-12" />
 
