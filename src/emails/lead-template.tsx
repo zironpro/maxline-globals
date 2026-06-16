@@ -15,6 +15,7 @@ interface LeadEmailProps {
 		name: string;
 		email: string;
 		phone: string;
+		companyName?: string;
 		grossWeight: string;
 		volume: string;
 		chargeableVolume: number;
@@ -57,6 +58,11 @@ export function LeadEmail({ data }: LeadEmailProps) {
 						<Text style={detailText}>
 							<strong>Phone:</strong> {data.phone}
 						</Text>
+						{data.companyName && (
+							<Text style={detailText}>
+								<strong>Company:</strong> {data.companyName}
+							</Text>
+						)}
 
 						<Hr style={divider} />
 

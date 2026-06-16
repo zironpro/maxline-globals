@@ -1,6 +1,6 @@
 "use client";
 
-import { lazy, useState, useTransition } from "react";
+import { lazy, useEffect, useState, useTransition } from "react";
 
 import { Calculator, Package, Scale } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -47,6 +47,7 @@ type LeadFormValues = {
 	name: string;
 	email: string;
 	phone: string;
+	companyName: string;
 };
 
 export function CalculatorSection() {
@@ -55,6 +56,18 @@ export function CalculatorSection() {
 
 	const [isOpen, setIsOpen] = useState(false);
 	const [isLeadSubmitted, setIsLeadSubmitted] = useState(false);
+
+	useEffect(() => {
+		if (typeof window !== "undefined" && window.fbq) {
+			window.fbq("track", "ViewContent");
+		}
+	}, []);
+
+	useEffect(() => {
+		if (isLeadSubmitted && typeof window !== "undefined" && window.fbq) {
+			window.fbq("track", "CompleteRegistration");
+		}
+	}, [isLeadSubmitted]);
 	const [isPending, startTransition] = useTransition();
 
 	const calculatorForm = useForm<CalculatorFormValues>({
@@ -70,6 +83,7 @@ export function CalculatorSection() {
 			name: "",
 			email: "",
 			phone: "",
+			companyName: "",
 		},
 	});
 
@@ -127,14 +141,23 @@ export function CalculatorSection() {
 					name: leadValues.name,
 					email: leadValues.email,
 					phone: leadValues.phone,
+					companyName: leadValues.companyName,
 					grossWeight: calcValues.grossWeight,
 					volume: calcValues.volume,
 					chargeableVolume: chargeable,
 					totalCost: total,
 					localDoc: calcValues.localDoc,
+					eventSourceUrl:
+						typeof window !== "undefined"
+							? window.location.href
+							: "https://maxlineglobal.com/en/calculator",
 				});
 
-				if (result.success) {
+				if (result.success && result.eventId) {
+					// Fire Browser Lead Event
+					if (typeof window !== "undefined" && window.fbq) {
+						window.fbq("track", "Lead", {}, { eventID: result.eventId });
+					}
 					setIsOpen(false);
 					setIsLeadSubmitted(true);
 					leadForm.reset();
@@ -326,7 +349,12 @@ export function CalculatorSection() {
 							{isLeadSubmitted ? (
 								<Button
 									className="w-full gap-2"
-									onClick={() => handleCalculation()}
+									onClick={() => {
+										if (typeof window !== "undefined" && window.fbq) {
+											window.fbq("track", "InitiateCheckout");
+										}
+										handleCalculation();
+									}}
 									size="lg"
 								>
 									<Calculator className="size-5" />
@@ -335,7 +363,15 @@ export function CalculatorSection() {
 							) : (
 								<Dialog onOpenChange={setIsOpen} open={isOpen}>
 									<DialogTrigger asChild>
-										<Button className="w-full gap-2" size="lg">
+										<Button
+											className="w-full gap-2"
+											onClick={() => {
+												if (typeof window !== "undefined" && window.fbq) {
+													window.fbq("track", "InitiateCheckout");
+												}
+											}}
+											size="lg"
+										>
 											<Calculator className="size-5" />
 											{t("calculateBtn")}
 										</Button>
@@ -383,6 +419,16 @@ export function CalculatorSection() {
 														required
 														type="tel"
 														{...leadForm.register("phone", { required: true })}
+													/>
+												</div>
+												<div className="grid gap-2">
+													<Label htmlFor="lead-company">
+														{tForm("company.label")}
+													</Label>
+													<Input
+														id="lead-company"
+														placeholder={tForm("company.placeholder")}
+														{...leadForm.register("companyName")}
 													/>
 												</div>
 											</div>

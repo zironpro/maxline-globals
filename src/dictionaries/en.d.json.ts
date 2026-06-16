@@ -797,6 +797,10 @@ declare const messages: {
 			"phone": {
 				"label": "Phone",
 				"placeholder": "Enter phone number"
+			},
+			"company": {
+				"label": "Company Name (Optional)",
+				"placeholder": "Enter company name"
 			}
 		},
 		"calculator": {

@@ -10,3 +10,9 @@ declare module "next-intl" {
 		Formats: typeof formats;
 	}
 }
+
+declare global {
+	interface Window {
+		fbq?: (...args: unknown[]) => void;
+	}
+}

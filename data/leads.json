@@ -1,0 +1,14 @@
+[
+  {
+    "id": 10001,
+    "name": "sr",
+    "email": "tf@abc.c",
+    "phone": "y",
+    "company_name": "uyg",
+    "weight": 1,
+    "cbm": 2,
+    "documentation_required": true,
+    "calculated_price": 660,
+    "created_at": "2026-06-16T08:24:24.803Z"
+  }
+]

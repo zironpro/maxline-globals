@@ -794,6 +794,10 @@
 			"phone": {
 				"label": "رقم الهاتف",
 				"placeholder": "أدخل رقم الهاتف"
+			},
+			"company": {
+				"label": "اسم الشركة (اختياري)",
+				"placeholder": "أدخل اسم شركتك"
 			}
 		},
 		"calculator": {
