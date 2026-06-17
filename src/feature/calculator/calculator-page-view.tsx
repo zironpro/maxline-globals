@@ -1,3 +1,5 @@
+import { WhatsappFloatingButton } from "@/components/whatsapp-floating-button";
+
 import { Cta } from "../cta";
 import { Services } from "../home/sections/services";
 import { BenefitsSection } from "./sections/benifits";
@@ -15,6 +17,7 @@ export const CalculatorPageView = () => {
 			<Services title="End-to-End Logistics Services to your exact specifications." />
 			<BenefitsSection />
 			<Cta />
+			<WhatsappFloatingButton />
 		</main>
 	);
 };
