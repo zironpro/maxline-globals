@@ -20,6 +20,7 @@
 		"@hookform/resolvers": "^5.2.2",
 		"@hugeicons/core-free-icons": "^3.1.1",
 		"@hugeicons/react": "^1.1.4",
+		"@next/third-parties": "^16.2.9",
 		"@openpanel/nextjs": "^1.4.0",
 		"@radix-ui/react-accordion": "^1.2.12",
 		"@radix-ui/react-dialog": "^1.1.15",

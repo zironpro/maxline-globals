@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
@@ -170,6 +171,7 @@ export default async function RootLayout({
 						<Footer />
 					</Providers>
 				</NextIntlClientProvider>
+				<GoogleAnalytics gaId="G-HJLVC6QCXH" />
 			</body>
 		</html>
 	);
