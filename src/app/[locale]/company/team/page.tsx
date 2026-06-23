@@ -118,7 +118,7 @@ export default async function TeamPage({
 					<h2 className="text-center font-grotesk text-5xl text-accent-secondary">
 						<StaggeredText text={t("leadershipTitle")} />
 					</h2>
-					<ul className="grid grid-cols-1 gap-4 pt-12 sm:grid-cols-2 lg:grid-cols-4">
+					<ul className="grid grid-cols-1 gap-4 pt-12 sm:grid-cols-2 lg:grid-cols-3">
 						{TEAMS.map((team, i) => (
 							<li
 								className="overflow-hidden rounded-xl bg-brand-dark"

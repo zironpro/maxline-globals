@@ -425,9 +425,9 @@ export const TEAMS = [
 		link: "https://www.linkedin.com/in/saji-thomas-48559ba1/",
 		image: "/images/teams/saji.webp",
 	},
-	{
-		nameKey: "PrakashMadhavan",
-		designationKey: "GeneralManager",
-		image: "/images/teams/prakash.webp",
-	},
+	// {
+	// 	nameKey: "PrakashMadhavan",
+	// 	designationKey: "GeneralManager",
+	// 	image: "/images/teams/prakash.webp",
+	// },
 ];
