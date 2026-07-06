@@ -63,7 +63,7 @@ const SERVICES_LINKS: SubMenuItem[] = [
 	},
 	{
 		title: "MovingLashing",
-		href: "/services/heavy-equipment-moving-dubai",
+		href: "/services/moving-lashing-dubai",
 		img: "/images/movers-nav.webp",
 		alt: "Moving, securing, and lashing services for safe cargo transport",
 	},
@@ -172,7 +172,7 @@ export const SERVICES: Service[] = [
 	{
 		title: "movingLashing",
 		description: "Professional Relocation and Cargo Securing for Safe Transit.",
-		href: "/services/heavy-equipment-moving-dubai" as Route,
+		href: "/services/moving-lashing-dubai" as Route,
 		image: "/images/services/lashing.webp",
 	},
 ] as const;
