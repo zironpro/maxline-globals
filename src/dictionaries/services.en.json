@@ -1,5 +1,7 @@
 {
-	"common": { "title": "Maxline Global Logistics" },
+	"common": {
+		"title": "Maxline Global Logistics"
+	},
 	"landFreight": {
 		"hero": {
 			"title": "Land Freight",
@@ -95,7 +97,12 @@
 			}
 		],
 		"industriesTitle": "Industries we move the Maxline Global way",
-		"capabilitiesTitle": "Expanded Land Freight Capabilities for Faster, Smarter Delivery"
+		"capabilitiesTitle": "Expanded Land Freight Capabilities for Faster, Smarter Delivery",
+		"meta": {
+			"title": "Land Freight Services in Dubai for Fast Regional Cargo Moves",
+			"description": "Land freight services Dubai for secure cargo transport across GCC routes with timely delivery, flexible logistics support and reliable freight handling daily.",
+			"keywords": "land freight services Dubai, road freight Dubai, cargo transport Dubai"
+		}
 	},
 	"airFreight": {
 		"hero": {
@@ -192,7 +199,12 @@
 			}
 		],
 		"industriesTitle": "Industries we move the Maxline Global way",
-		"capabilitiesTitle": "Expanded Air Freight Capabilities for Global Delivery"
+		"capabilitiesTitle": "Expanded Air Freight Capabilities for Global Delivery",
+		"meta": {
+			"title": "Air Freight Tracking in Dubai for Secure Global Shipment Now",
+			"description": "Air freight tracking in Dubai with fast shipment updates, secure cargo handling, airline coordination, and dependable delivery support for businesses daily.",
+			"keywords": "air freight tracking Dubai, air cargo Dubai, freight tracking Dubai"
+		}
 	},
 	"seaFreight": {
 		"hero": {
@@ -289,14 +301,19 @@
 			}
 		],
 		"industriesTitle": "Industries we move the Maxline Global way",
-		"capabilitiesTitle": "Expanded Sea Freight Capabilities for Global Delivery"
+		"capabilitiesTitle": "Expanded Sea Freight Capabilities for Global Delivery",
+		"meta": {
+			"title": "International Sea Freight Services in Dubai for Global Cargo",
+			"description": "Maxline Global offers international sea freight services in Dubai. FCL, LCL, breakbulk & Ro-Ro shipping with full port handling and customs clearance.",
+			"keywords": "international sea freight services Dubai, ocean freight Dubai, container shipping Dubai"
+		}
 	},
 	"projectCargo": {
 		"meta": {
-			"title": "Project Cargo Handling for Heavy Machinery Logistics | Expert Project Cargo",
-			"description": "Expert project cargo handling for heavy machinery logistics in Dubai with precise planning, oversized transport expertise, and end-to-end execution."
+			"title": "Project Cargo Services in Dubai | Heavy Lift Logistics | Maxline",
+			"description": "Maxline Global provides reliable project cargo, heavy lift, and oversized cargo logistics across the UAE and worldwide with safe, efficient transport solutions.",
+			"keywords": "industrial cargo transportation Dubai, project cargo Dubai"
 		},
-
 		"schema": {
 			"name": "Project Cargo Logistics",
 			"serviceType": "Project cargo handling and logistics",
@@ -488,7 +505,12 @@
 			}
 		],
 		"industriesTitle": "Industries we move the Maxline Global way",
-		"capabilitiesTitle": "Expanded Packing Capabilities for Safe, Compliant Delivery"
+		"capabilitiesTitle": "Expanded Packing Capabilities for Safe, Compliant Delivery",
+		"meta": {
+			"title": "Export Packing Services Dubai for Safe Cargo Protections Hub",
+			"description": "Export packing services in Dubai using durable materials, professional crating, and secure packing methods for valuable commercial shipments worldwide.",
+			"keywords": "export packing services Dubai, cargo packing Dubai"
+		}
 	},
 	"warehousing": {
 		"hero": {
@@ -585,7 +607,12 @@
 			}
 		],
 		"industriesTitle": "Industries we move the Maxline Global way",
-		"capabilitiesTitle": "Expanded Warehousing Capabilities for Smart Distribution"
+		"capabilitiesTitle": "Expanded Warehousing Capabilities for Smart Distribution",
+		"meta": {
+			"title": "Warehouse Storage Services in Dubai for Secure Business Goods",
+			"description": "Warehouse storage services in Dubai with inventory control, secure storage space, and efficient distribution support for commercial supply chains daily.",
+			"keywords": "warehouse storage services Dubai, warehousing Dubai"
+		}
 	},
 	"exhibitionCargo": {
 		"hero": {
@@ -682,7 +709,12 @@
 			}
 		],
 		"industriesTitle": "Industries we move the Maxline Global way",
-		"capabilitiesTitle": "Expanded Exhibition Cargo Capabilities for Event Success"
+		"capabilitiesTitle": "Expanded Exhibition Cargo Capabilities for Event Success",
+		"meta": {
+			"title": "Exhibition Logistics Services Dubai for Event Cargo Supports",
+			"description": "Maxline Global provides complete exhibition logistics services in Dubai. Door-to-stand delivery, ATA Carnet support, venue coordination & return shipping.",
+			"keywords": "exhibition logistics services Dubai, event logistics Dubai"
+		}
 	},
 	"moversLashing": {
 		"hero": {
@@ -779,6 +811,11 @@
 			}
 		],
 		"industriesTitle": "Industries we move the Maxline Global way",
-		"capabilitiesTitle": "Expanded Moving & Lashing Capabilities for Secure Relocation"
+		"capabilitiesTitle": "Expanded Moving & Lashing Capabilities for Secure Relocation",
+		"meta": {
+			"title": "Heavy Equipment Moving Dubai with a Secure Lashing Solutions",
+			"description": "Heavy equipment moving in Dubai with expert lashing, safe loading, transport planning, and dependable machinery relocation for industrial operations.",
+			"keywords": "heavy equipment moving Dubai, equipment lashing Dubai"
+		}
 	}
 }

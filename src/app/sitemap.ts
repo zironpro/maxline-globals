@@ -5,14 +5,14 @@ import { getInsights } from "@/feature/insights/actions/query";
 import { routing } from "@/i18n/routing";
 
 const serviceSlugs = [
-	"air-freight",
-	"sea-freight",
-	"land-freight",
-	"project-cargo",
-	"packing",
-	"warehousing",
-	"exhibition-cargo",
-	"movers-lashing",
+	"air-freight-tracking-dubai",
+	"international-sea-freight-services-dubai",
+	"land-freight-services-dubai",
+	"project-cargo-services-dubai",
+	"export-packing-services-dubai",
+	"warehouse-storage-services-dubai",
+	"exhibition-logistics-services-dubai",
+	"heavy-equipment-moving-dubai",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

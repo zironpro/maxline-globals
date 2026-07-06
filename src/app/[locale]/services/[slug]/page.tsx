@@ -51,9 +51,13 @@ export async function generateMetadata({
 			title: "Service not available right now",
 		};
 
+	const metaKeywordsRaw = t(`${serviceKey}.meta.keywords`);
+	const keywords = metaKeywordsRaw !== `${serviceKey}.meta.keywords` ? metaKeywordsRaw : undefined;
+
 	return {
 		title: t(`${serviceKey}.meta.title`),
 		description: t(`${serviceKey}.meta.description`),
+		keywords,
 		openGraph: {
 			title: t(`${serviceKey}.meta.title`),
 			description: t(`${serviceKey}.meta.description`),

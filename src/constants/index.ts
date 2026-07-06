@@ -20,50 +20,50 @@ export type NavLink = {
 const SERVICES_LINKS: SubMenuItem[] = [
 	{
 		title: "airFreight",
-		href: "/services/air-freight",
+		href: "/services/air-freight-tracking-dubai",
 		img: "/images/air-freight.webp",
 		alt: "Air freight service for time‑critical cargo—Maxline Global",
 	},
 
 	{
 		title: "landFreight",
-		href: "/services/land-freight",
+		href: "/services/land-freight-services-dubai",
 		img: "/images/blogs/transport-logistics-products.jpg",
 		alt: "Land freight trucking service across the GCC by Maxline Global",
 	},
 	{
 		title: "seaFreight",
-		href: "/services/sea-freight",
+		href: "/services/international-sea-freight-services-dubai",
 		img: "/images/sea-freight.webp",
 		alt: "Sea freight LCL and FCL shipping solutions—Maxline Global",
 	},
 	{
 		title: "projectCargo",
-		href: "/services/project-cargo",
+		href: "/services/project-cargo-services-dubai",
 		img: "/images/transportation-types.jpg",
 		alt: "Project cargo handling with heavy lift and out‑of‑gauge expertise",
 	},
 	{
 		title: "packing",
-		href: "/services/packing",
+		href: "/services/export-packing-services-dubai",
 		img: "/images/packing.webp",
 		alt: "Export packing and crating to protect cargo in transit",
 	},
 	{
 		title: "warehousing",
-		href: "/services/warehousing",
+		href: "/services/warehouse-storage-services-dubai",
 		img: "/images/warehousing.webp",
 		alt: "Warehousing and storage in Jebel Ali, Dubai—Maxline Global",
 	},
 	{
 		title: "exhibitionCargo",
-		href: "/services/exhibition-cargo",
+		href: "/services/exhibition-logistics-services-dubai",
 		img: "/images/exhibition-cargo.webp",
 		alt: "Exhibition and event logistics with on‑site handling and setup",
 	},
 	{
 		title: "MovingLashing",
-		href: "/services/movers-lashing",
+		href: "/services/heavy-equipment-moving-dubai",
 		img: "/images/movers-nav.webp",
 		alt: "Moving, securing, and lashing services for safe cargo transport",
 	},
@@ -127,52 +127,52 @@ export const SERVICES: Service[] = [
 	{
 		title: "landFreight",
 		description: "Efficient and Secure Road Transportation Across the GCC.",
-		href: "/services/land-freight" as Route,
+		href: "/services/land-freight-services-dubai" as Route,
 		image: "/images/services/truck.png",
 	},
 	{
 		title: "airFreight",
 		description: "Fast and reliable air cargo for time-critical shipments.",
-		href: "/services/air-freight" as Route,
+		href: "/services/air-freight-tracking-dubai" as Route,
 		image: "/images/services/air.png",
 	},
 	{
 		title: "seaFreight",
 		description: "Cost-effective sea freight connecting major global ports.",
-		href: "/services/sea-freight" as Route,
+		href: "/services/international-sea-freight-services-dubai" as Route,
 		image: "/images/services/sea.png",
 	},
 	{
 		title: "projectCargo",
 		description:
 			"Specialized handling for heavy, oversized, and complex cargo.",
-		href: "/services/project-cargo" as Route,
+		href: "/services/project-cargo-services-dubai" as Route,
 		image: "/images/services/project-cargo.png",
 	},
 	{
 		title: "packaging",
 		description: "Export-grade packing to protect cargo during transit.",
-		href: "/services/packing" as Route,
+		href: "/services/export-packing-services-dubai" as Route,
 		image: "/images/services/packing.png",
 	},
 	{
 		title: "warehousing",
 		description:
 			"Secure warehousing and distribution for streamlined supply chains.",
-		href: "/services/warehousing" as Route,
+		href: "/services/warehouse-storage-services-dubai" as Route,
 		image: "/images/services/warehouse.webp",
 	},
 	{
 		title: "exhibition",
 		description:
 			"End-to-end logistics for exhibitions, events, and trade shows.",
-		href: "/services/exhibition-cargo" as Route,
+		href: "/services/exhibition-logistics-services-dubai" as Route,
 		image: "/images/services/crane.png",
 	},
 	{
 		title: "movingLashing",
 		description: "Professional Relocation and Cargo Securing for Safe Transit.",
-		href: "/services/movers-lashing" as Route,
+		href: "/services/heavy-equipment-moving-dubai" as Route,
 		image: "/images/services/lashing.webp",
 	},
 ] as const;

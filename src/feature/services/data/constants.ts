@@ -9,14 +9,14 @@ import {
 
 export const SERVICES = [
 	{
-		slug: "land-freight",
+		slug: "land-freight-services-dubai",
 		hero: {
 			title: "Land Freight",
 			description:
 				"Efficient land freight across the GCC—FTL, LTL, and oversized cargo delivered with speed and reliability.",
 			image: {
 				src: "/images/services/land.webp",
-				alt: "Maxline Global's modern freight truck representing our land freight capabilities",
+				alt: "Land freight truck transporting commercial cargo in Dubai",
 				width: 816,
 				height: 626,
 			},
@@ -124,14 +124,14 @@ export const SERVICES = [
 		],
 	},
 	{
-		slug: "air-freight",
+		slug: "air-freight-tracking-dubai",
 		hero: {
 			title: "Air Freight",
 			description:
 				"Swift air freight solutions for global reach—time-sensitive cargo delivered with precision, speed, and reliability.",
 			image: {
 				src: "/images/services/air.png",
-				alt: "Maxline Global's air freight services with a cargo aircraft in action",
+				alt: "Air cargo shipment tracking at Dubai airport",
 				width: 816,
 				height: 626,
 			},
@@ -242,14 +242,14 @@ export const SERVICES = [
 		],
 	},
 	{
-		slug: "sea-freight",
+		slug: "international-sea-freight-services-dubai",
 		hero: {
 			title: "Sea Freight",
 			description:
 				"Cost-effective and reliable sea freight solutions—FCL, LCL, and project cargo shipping with global reach and expert handling.",
 			image: {
 				src: "/images/services/sea.png",
-				alt: "Maxline Global's sea freight cargo ship representing international ocean shipping capabilities",
+				alt: "Container vessel for international sea freight in Dubai",
 				width: 816,
 				height: 626,
 			},
@@ -360,14 +360,14 @@ export const SERVICES = [
 		],
 	},
 	{
-		slug: "project-cargo",
+		slug: "project-cargo-services-dubai",
 		hero: {
 			title: "Project Cargo",
 			description:
 				"Specialized project cargo logistics: oversized, heavy-lift, and time-critical shipments delivered with precision and end-to-end coordination.",
 			image: {
 				src: "/images/services/project-cargo.png",
-				alt: "Maxline Global handling large project cargo with cranes and specialized equipment",
+				alt: "Industrial project cargo transport in Dubai",
 				width: 816,
 				height: 626,
 			},
@@ -478,14 +478,14 @@ export const SERVICES = [
 		],
 	},
 	{
-		slug: "packing",
+		slug: "export-packing-services-dubai",
 		hero: {
 			title: "Packing Services",
 			description:
 				"Professional packing and crating solutions—ensuring the safety, compliance, and integrity of your cargo for any mode of transport.",
 			image: {
 				src: "/images/services/packing.png",
-				alt: "Maxline Global's expert packing team securing cargo in wooden crates",
+				alt: "Professional export packing for cargo in Dubai",
 				width: 816,
 				height: 626,
 			},
@@ -599,14 +599,14 @@ export const SERVICES = [
 		],
 	},
 	{
-		slug: "warehousing",
+		slug: "warehouse-storage-services-dubai",
 		hero: {
 			title: "Warehousing & Distribution",
 			description:
 				"Strategic warehousing solutions—secure storage, inventory management, and last-mile distribution tailored to your business.",
 			image: {
 				src: "/images/services/warehouse.webp",
-				alt: "Maxline Global’s secure warehouse facility with racked storage and forklift operations",
+				alt: "Modern warehouse storage facility in Dubai",
 				width: 816,
 				height: 626,
 			},
@@ -711,14 +711,14 @@ export const SERVICES = [
 		],
 	},
 	{
-		slug: "exhibition-cargo",
+		slug: "exhibition-logistics-services-dubai",
 		hero: {
 			title: "Exhibition & Event Cargo",
 			description:
 				"Reliable and time-critical logistics for exhibitions and events—door-to-stand delivery with full customs and venue coordination.",
 			image: {
 				src: "/images/services/crane.png",
-				alt: "Maxline Global team handling exhibition cargo with booths and crates at an event venue",
+				alt: "Exhibition cargo logistics handling in Dubai",
 				width: 816,
 				height: 626,
 			},
@@ -826,14 +826,14 @@ export const SERVICES = [
 		],
 	},
 	{
-		slug: "movers-lashing",
+		slug: "heavy-equipment-moving-dubai",
 		hero: {
 			title: "Moving & Lashing Services",
 			description:
 				"Secure and professional cargo lashing, securing, and relocation services—ensuring safe transport for local and international moves.",
 			image: {
 				src: "/images/services/lashing.webp",
-				alt: "Maxline Global team performing container lashing and industrial moving services",
+				alt: "Heavy equipment moving and lashing in Dubai",
 				width: 816,
 				height: 600,
 			},

@@ -1,13 +1,13 @@
 /** Slug segment from `/services/{slug}` → key in services.{locale}.json */
 export const SLUG_TO_SERVICE_DICT_KEY: Record<string, string> = {
-	"land-freight": "landFreight",
-	"air-freight": "airFreight",
-	"sea-freight": "seaFreight",
-	"project-cargo": "projectCargo",
-	packing: "packing",
-	warehousing: "warehousing",
-	"exhibition-cargo": "exhibitionCargo",
-	"movers-lashing": "moversLashing",
+	"land-freight-services-dubai": "landFreight",
+	"air-freight-tracking-dubai": "airFreight",
+	"international-sea-freight-services-dubai": "seaFreight",
+	"project-cargo-services-dubai": "projectCargo",
+	"export-packing-services-dubai": "packing",
+	"warehouse-storage-services-dubai": "warehousing",
+	"exhibition-logistics-services-dubai": "exhibitionCargo",
+	"heavy-equipment-moving-dubai": "moversLashing",
 };
 
 export function serviceDictKeyFromHref(href: string): string | undefined {
