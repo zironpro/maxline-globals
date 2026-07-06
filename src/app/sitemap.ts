@@ -12,7 +12,7 @@ const serviceSlugs = [
 	"export-packing-services-dubai",
 	"warehouse-storage-services-dubai",
 	"exhibition-logistics-services-dubai",
-	"moving-lashing-dubai",
+	"movers-lashing",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

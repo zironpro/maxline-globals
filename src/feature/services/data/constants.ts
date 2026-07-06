@@ -826,7 +826,7 @@ export const SERVICES = [
 		],
 	},
 	{
-		slug: "moving-lashing-dubai",
+		slug: "movers-lashing",
 		hero: {
 			title: "Moving & Lashing Services",
 			description:

@@ -7,7 +7,7 @@ export const SLUG_TO_SERVICE_DICT_KEY: Record<string, string> = {
 	"export-packing-services-dubai": "packing",
 	"warehouse-storage-services-dubai": "warehousing",
 	"exhibition-logistics-services-dubai": "exhibitionCargo",
-	"moving-lashing-dubai": "moversLashing",
+	"movers-lashing": "moversLashing",
 };
 
 export function serviceDictKeyFromHref(href: string): string | undefined {
